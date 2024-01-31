@@ -13,6 +13,13 @@
 		EC9A24692B6914CC00F77D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9A24672B6914CC00F77D11 /* Main.storyboard */; };
 		EC9A246B2B6914CE00F77D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9A246A2B6914CE00F77D11 /* Assets.xcassets */; };
 		EC9A246E2B6914CE00F77D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9A246C2B6914CE00F77D11 /* LaunchScreen.storyboard */; };
+		EC9A24772B69176200F77D11 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC9A24762B69176200F77D11 /* Alamofire */; };
+		EC9A247A2B69176C00F77D11 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC9A24792B69176C00F77D11 /* Kingfisher */; };
+		EC9A247D2B69177300F77D11 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC9A247C2B69177300F77D11 /* SnapKit */; };
+		EC9A247F2B69177300F77D11 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EC9A247E2B69177300F77D11 /* SnapKit-Dynamic */; };
+		EC9A24812B69189900F77D11 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24802B69189900F77D11 /* MainTableViewCell.swift */; };
+		EC9A248E2B6A5F7500F77D11 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */; };
+		EC9A24902B6A60E100F77D11 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,9 @@
 		EC9A246A2B6914CE00F77D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9A246D2B6914CE00F77D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9A246F2B6914CE00F77D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9A24802B69189900F77D11 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9A247D2B69177300F77D11 /* SnapKit in Frameworks */,
+				EC9A247A2B69176C00F77D11 /* Kingfisher in Frameworks */,
+				EC9A24772B69176200F77D11 /* Alamofire in Frameworks */,
+				EC9A247F2B69177300F77D11 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +70,12 @@
 		EC9A24602B6914CC00F77D11 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */,
+				EC9A24652B6914CC00F77D11 /* ViewController.swift */,
+				EC9A24802B69189900F77D11 /* MainTableViewCell.swift */,
+				EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */,
 				EC9A24612B6914CC00F77D11 /* AppDelegate.swift */,
 				EC9A24632B6914CC00F77D11 /* SceneDelegate.swift */,
-				EC9A24652B6914CC00F77D11 /* ViewController.swift */,
 				EC9A24672B6914CC00F77D11 /* Main.storyboard */,
 				EC9A246A2B6914CE00F77D11 /* Assets.xcassets */,
 				EC9A246C2B6914CE00F77D11 /* LaunchScreen.storyboard */,
@@ -83,6 +100,12 @@
 			dependencies = (
 			);
 			name = Media;
+			packageProductDependencies = (
+				EC9A24762B69176200F77D11 /* Alamofire */,
+				EC9A24792B69176C00F77D11 /* Kingfisher */,
+				EC9A247C2B69177300F77D11 /* SnapKit */,
+				EC9A247E2B69177300F77D11 /* SnapKit-Dynamic */,
+			);
 			productName = Media;
 			productReference = EC9A245E2B6914CC00F77D11 /* Media.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,11 @@
 				Base,
 			);
 			mainGroup = EC9A24552B6914CC00F77D11;
+			packageReferences = (
+				EC9A24752B69176200F77D11 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC9A24782B69176C00F77D11 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EC9A247B2B69177300F77D11 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EC9A245F2B6914CC00F77D11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9A248E2B6A5F7500F77D11 /* BaseViewController.swift in Sources */,
+				EC9A24902B6A60E100F77D11 /* MainCollectionViewCell.swift in Sources */,
 				EC9A24662B6914CC00F77D11 /* ViewController.swift in Sources */,
 				EC9A24622B6914CC00F77D11 /* AppDelegate.swift in Sources */,
+				EC9A24812B69189900F77D11 /* MainTableViewCell.swift in Sources */,
 				EC9A24642B6914CC00F77D11 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +392,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC9A24752B69176200F77D11 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		EC9A24782B69176C00F77D11 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		EC9A247B2B69177300F77D11 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC9A24762B69176200F77D11 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9A24752B69176200F77D11 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EC9A24792B69176C00F77D11 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9A24782B69176C00F77D11 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EC9A247C2B69177300F77D11 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9A247B2B69177300F77D11 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EC9A247E2B69177300F77D11 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9A247B2B69177300F77D11 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC9A24562B6914CC00F77D11 /* Project object */;
 }

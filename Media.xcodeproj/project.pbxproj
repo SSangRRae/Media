@@ -20,6 +20,10 @@
 		EC9A24812B69189900F77D11 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24802B69189900F77D11 /* MainTableViewCell.swift */; };
 		EC9A248E2B6A5F7500F77D11 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */; };
 		EC9A24902B6A60E100F77D11 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */; };
+		EC9A24932B6A64B200F77D11 /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24922B6A64B200F77D11 /* TMDBAPIManager.swift */; };
+		EC9A24952B6A670700F77D11 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EC9A24942B6A670700F77D11 /* .gitignore */; };
+		EC9A24972B6A671D00F77D11 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24962B6A671D00F77D11 /* APIKey.swift */; };
+		EC9A249A2B6A67FA00F77D11 /* TVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24992B6A67FA00F77D11 /* TVModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		EC9A24802B69189900F77D11 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC9A24922B6A64B200F77D11 /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
+		EC9A24942B6A670700F77D11 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EC9A24962B6A671D00F77D11 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		EC9A24992B6A67FA00F77D11 /* TVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		EC9A24552B6914CC00F77D11 = {
 			isa = PBXGroup;
 			children = (
+				EC9A24942B6A670700F77D11 /* .gitignore */,
 				EC9A24602B6914CC00F77D11 /* Media */,
 				EC9A245F2B6914CC00F77D11 /* Products */,
 			);
@@ -70,6 +79,8 @@
 		EC9A24602B6914CC00F77D11 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				EC9A24982B6A67E900F77D11 /* Network */,
+				EC9A24962B6A671D00F77D11 /* APIKey.swift */,
 				EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */,
 				EC9A24652B6914CC00F77D11 /* ViewController.swift */,
 				EC9A24802B69189900F77D11 /* MainTableViewCell.swift */,
@@ -82,6 +93,15 @@
 				EC9A246F2B6914CE00F77D11 /* Info.plist */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		EC9A24982B6A67E900F77D11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A24922B6A64B200F77D11 /* TMDBAPIManager.swift */,
+				EC9A24992B6A67FA00F77D11 /* TVModel.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9A24952B6A670700F77D11 /* .gitignore in Resources */,
 				EC9A246E2B6914CE00F77D11 /* LaunchScreen.storyboard in Resources */,
 				EC9A246B2B6914CE00F77D11 /* Assets.xcassets in Resources */,
 				EC9A24692B6914CC00F77D11 /* Main.storyboard in Resources */,
@@ -168,9 +189,12 @@
 			files = (
 				EC9A248E2B6A5F7500F77D11 /* BaseViewController.swift in Sources */,
 				EC9A24902B6A60E100F77D11 /* MainCollectionViewCell.swift in Sources */,
+				EC9A24972B6A671D00F77D11 /* APIKey.swift in Sources */,
 				EC9A24662B6914CC00F77D11 /* ViewController.swift in Sources */,
 				EC9A24622B6914CC00F77D11 /* AppDelegate.swift in Sources */,
 				EC9A24812B69189900F77D11 /* MainTableViewCell.swift in Sources */,
+				EC9A24932B6A64B200F77D11 /* TMDBAPIManager.swift in Sources */,
+				EC9A249A2B6A67FA00F77D11 /* TVModel.swift in Sources */,
 				EC9A24642B6914CC00F77D11 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

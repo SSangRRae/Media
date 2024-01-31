@@ -30,7 +30,8 @@ extension MainCollectionViewCell {
     
     func configureViews() {
         contentView.backgroundColor = .clear
-        posterImageView.image = UIImage(systemName: "xmark")
+        posterImageView.clipsToBounds = true
+        posterImageView.layer.cornerRadius = 10
     }
     
     func configureConstraints() {

@@ -42,7 +42,8 @@ extension MainTableViewCell {
     
     func configureConstraints() {
         titleLabel.snp.makeConstraints { make in
-            make.top.leading.equalTo(contentView).offset(8)
+            make.top.equalTo(contentView.safeAreaLayoutGuide).offset(16)
+            make.leading.equalTo(contentView).offset(8)
             make.height.equalTo(22)
         }
         collectionView.snp.makeConstraints { make in

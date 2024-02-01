@@ -11,14 +11,12 @@ import Alamofire
 class TMDBAPIManager {
     static let shared = TMDBAPIManager()
     
-    let header: HTTPHeaders = ["Authorization": APIKey.tmdb]
-    let baseURL = "https://api.themoviedb.org/3/"
-    let languageParam = "?language=ko-KR"
-    
-    func fetchTrendingTV(completionHandler: @escaping ([TV]) -> Void) {
-        let url = baseURL + "trending/tv/week" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: TVModel.self) { response in
+    func fetchToTVSeries(api: TMDBAPI, completionHandler: @escaping ([TV]) -> Void) {
+        AF.request(api.url,
+                   method: api.method,
+                   parameters: api.parameter,
+                   encoding: URLEncoding(destination: .queryString),
+                   headers: api.header).responseDecodable(of: TVModel.self) { response in
             switch response.result {
             case .success(let success):
 //                dump(success)
@@ -29,38 +27,8 @@ class TMDBAPIManager {
         }
     }
     
-    func fetchTopRatedTV(completionHandler: @escaping ([TV]) -> Void) {
-        let url = baseURL + "tv/top_rated" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: TVModel.self) { response in
-            switch response.result {
-            case .success(let success):
-//                dump(success)
-                completionHandler(success.results)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    func fetchPopularTV(completionHandler: @escaping ([TV]) -> Void) {
-        let url = baseURL + "tv/popular" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: TVModel.self) { response in
-            switch response.result {
-            case .success(let success):
-//                dump(success)
-                completionHandler(success.results)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    func fetchInfoDrama(completionHandler: @escaping (DramaModel) -> Void) {
-        let url = baseURL + "tv/96102" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: DramaModel.self) { response in
+    func fetchInfoDrama(api: TMDBAPI, completionHandler: @escaping (DramaModel) -> Void) {
+        AF.request(api.url, headers: api.header).responseDecodable(of: DramaModel.self) { response in
             switch response.result {
             case .success(let success):
 //                dump(success)
@@ -71,24 +39,8 @@ class TMDBAPIManager {
         }
     }
     
-    func fetchRecommendationDrama(completionHandler: @escaping ([TV]) -> Void) {
-        let url = baseURL + "tv/96102/recommendations" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: TVModel.self) { response in
-            switch response.result {
-            case .success(let success):
-//                dump(success)
-                completionHandler(success.results)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    func fetchAggregateCredits(completionHandler: @escaping ([Person]) -> Void) {
-        let url = baseURL + "tv/96102/aggregate_credits" + languageParam
-        
-        AF.request(url, headers: header).responseDecodable(of: AggregateModel.self) { response in
+    func fetchAggregateCredits(api: TMDBAPI,completionHandler: @escaping ([Person]) -> Void) {
+        AF.request(api.url, headers: api.header).responseDecodable(of: AggregateModel.self) { response in
             switch response.result {
             case .success(let success):
 //                dump(success)

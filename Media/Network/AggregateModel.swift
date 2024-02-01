@@ -15,7 +15,7 @@ struct AggregateModel: Decodable {
 struct Person: Decodable {
     let id: Int
     let name: String
-    let profile: String
+    let profile: String?
     
     enum CodingKeys: String, CodingKey {
         case id

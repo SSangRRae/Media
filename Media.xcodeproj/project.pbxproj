@@ -26,6 +26,8 @@
 		EC9A249A2B6A67FA00F77D11 /* TVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24992B6A67FA00F77D11 /* TVModel.swift */; };
 		EC9A249C2B6B4C5C00F77D11 /* DramaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A249B2B6B4C5C00F77D11 /* DramaModel.swift */; };
 		EC9A249E2B6B5D2500F77D11 /* AggregateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A249D2B6B5D2500F77D11 /* AggregateModel.swift */; };
+		EC9A24A92B6BD01E00F77D11 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24A82B6BD01E00F77D11 /* MainView.swift */; };
+		EC9A24AB2B6BD18B00F77D11 /* TMDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A24AA2B6BD18B00F77D11 /* TMDBAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		EC9A24992B6A67FA00F77D11 /* TVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVModel.swift; sourceTree = "<group>"; };
 		EC9A249B2B6B4C5C00F77D11 /* DramaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaModel.swift; sourceTree = "<group>"; };
 		EC9A249D2B6B5D2500F77D11 /* AggregateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateModel.swift; sourceTree = "<group>"; };
+		EC9A24A82B6BD01E00F77D11 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EC9A24AA2B6BD18B00F77D11 /* TMDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,9 @@
 		EC9A24602B6914CC00F77D11 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				EC9A24982B6A67E900F77D11 /* Network */,
 				EC9A24962B6A671D00F77D11 /* APIKey.swift */,
-				EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */,
+				EC9A24A72B6BCCFA00F77D11 /* Base */,
+				EC9A24982B6A67E900F77D11 /* Network */,
 				EC9A24652B6914CC00F77D11 /* ViewController.swift */,
 				EC9A24802B69189900F77D11 /* MainTableViewCell.swift */,
 				EC9A248F2B6A60E100F77D11 /* MainCollectionViewCell.swift */,
@@ -102,12 +106,22 @@
 		EC9A24982B6A67E900F77D11 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EC9A24AA2B6BD18B00F77D11 /* TMDBAPI.swift */,
 				EC9A24922B6A64B200F77D11 /* TMDBAPIManager.swift */,
 				EC9A24992B6A67FA00F77D11 /* TVModel.swift */,
 				EC9A249B2B6B4C5C00F77D11 /* DramaModel.swift */,
 				EC9A249D2B6B5D2500F77D11 /* AggregateModel.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		EC9A24A72B6BCCFA00F77D11 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A248D2B6A5F7500F77D11 /* BaseViewController.swift */,
+				EC9A24A82B6BD01E00F77D11 /* MainView.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,11 +210,13 @@
 				EC9A249E2B6B5D2500F77D11 /* AggregateModel.swift in Sources */,
 				EC9A248E2B6A5F7500F77D11 /* BaseViewController.swift in Sources */,
 				EC9A24902B6A60E100F77D11 /* MainCollectionViewCell.swift in Sources */,
+				EC9A24A92B6BD01E00F77D11 /* MainView.swift in Sources */,
 				EC9A24972B6A671D00F77D11 /* APIKey.swift in Sources */,
 				EC9A249C2B6B4C5C00F77D11 /* DramaModel.swift in Sources */,
 				EC9A24662B6914CC00F77D11 /* ViewController.swift in Sources */,
 				EC9A24622B6914CC00F77D11 /* AppDelegate.swift in Sources */,
 				EC9A24812B69189900F77D11 /* MainTableViewCell.swift in Sources */,
+				EC9A24AB2B6BD18B00F77D11 /* TMDBAPI.swift in Sources */,
 				EC9A24932B6A64B200F77D11 /* TMDBAPIManager.swift in Sources */,
 				EC9A249A2B6A67FA00F77D11 /* TVModel.swift in Sources */,
 				EC9A24642B6914CC00F77D11 /* SceneDelegate.swift in Sources */,
